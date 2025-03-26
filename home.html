@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+  <!--
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+  <!-- <div id="banner" class="banner">
+    <h1>Hello, Welcome to my page!</h1>
+    <div class="typing-text">
+        I'm a <span id="typed-text"></span>
+    </div>
+    <a href="#about"><button class="responsive-button">Scroll down</button></a>
+</div> -->
+
+  <div id="about" class="about" ">
+    <main>
+
+      <!--
+        - #SIDEBAR
+      -->
+
+      <aside class="sidebar" data-aos="fade-right" data-sidebar>
+
+        <div class="sidebar-info">
+
+          <figure class="avatar-box">
+            <img src="./assets/images/empus.jpg" alt="Reyhan Mochamad" width="50">
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Reyhan Mochamad">Reyhan Mochamad Fabian</h1>
+
+            <div class="title-row">
+              <p class="title">Developer</p>
+              <p class="title">Machine Learning</p>
+              <p class="title">Data Science</p>
+
+            </div>
+            <!-- <p class="title">Web developer</p> -->
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:reyhanmf.dev@gmail.com" class="contact-link">reyhanmf.dev@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+6281386983669" class="contact-link">+62 813-8698-3669</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">15 June, 1998</time>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>West Java, Bandung, Indonesia</address>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </aside>
+
+
+
+
+
+      <!--
+        - #main-content
+      -->
+
+      <div class="main-content" data-aos="fade-left">
+
+        <!--
+          - #NAVBAR
+        -->
+
+        <nav class="navbar">
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+
+
+
+        <!--
+          - #ABOUT
+        -->
+
+        <article class="about  active" data-page="about">
+
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Reyhan Mochamad Fabian is a student at Universitas Pendidikan Indonesia (UPI) with a strong interest in
+              computer science, particularly in artificial intelligence.
+            </p>
+
+            <p>
+              Reyhan has experience using various frameworks such as TensorFlow and has won two awards: second place in
+              the ITConvert competition and third place in the AI-NOVAC competition.
+            </p>
+          </section>
+
+
+          <!--
+            - service
+          -->
+
+          <section class="service">
+
+            <h3 class="h3 service-title">Services</h3>
+
+            <ul class="service-list">
+
+              <li class="service-item" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="500">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-design.svg
+                  " alt="design icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a professional level.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="service-item" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="500">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="service-item" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="500">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and Android.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="service-item" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="500">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Artificial Intelligence</h4>
+
+                  <p class="service-item-text">
+                    Develope AI for your business to make it more efficient.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+
+          <!--
+            - testimonials
+          -->
+
+          <section class="testimonials">
+
+            <h3 class="h3 testimonials-title">Our Team!</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+
+              <li class="testimonials-item" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="500">
+                <div class="content-card" data-testimonials-item>
+
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Fahmi Nursafaaat</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Web Developer, Mobile Developer, Security Expert
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="testimonials-item" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="500">
+                <div class="content-card" data-testimonials-item>
+
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Firda Rosela S</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      UI/UX Designer
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>M. Fajar Jati. P</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      UI/UX Designer, Web Developer, Mobile Developer
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </section>
+
+
+          <!--
+            - testimonials modal
+          -->
+
+          <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <!-- <section class="testimonials-modal">
+  
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+  
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                </figure>
+  
+                <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              </div>
+  
+              <div class="modal-content">
+  
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+  
+                <time datetime="2021-06-14">14 June, 2024</time>
+  
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+  
+              </div>
+  
+            </section> -->
+
+          </div>
+
+
+          <!--
+            - clients
+          -->
+
+          <section class="clients">
+
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://itconvert.himasif.id/assets/itc.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/ITRC.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/pngegg.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/hima-removebg-preview.png" alt="client logo">
+                </a>
+              </li>
+
+            </ul>
+
+          </section>
+          <footer>
+
+            <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
+
+          </footer>
+        </article>
+
+
+
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+
+            <div class="title-wrapper" data-aos="fade-right">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item" data-aos="fade-right" data-aos-duration="500">
+
+                <h4 class="h4 timeline-item-title">SMAN 1 Rancabungur</h4>
+
+                <span>2019-2022</span>
+
+
+              </li>
+
+              <li class="timeline-item" data-aos="fade-right" data-aos-duration="700">
+
+                <h4 class="h4 timeline-item-title">Universitas Pendidikan Indonesia</h4>
+
+                <span>2022 — 2026 (Expected)</span>
+
+                <p class="timeline-text">
+                  Majoring Computer Engineering
+                </p>
+
+              </li>
+
+
+
+            </ol>
+
+          </section>
+
+
+          <section class="timeline">
+
+            <div class="title-wrapper" data-aos="fade-right" data-aos-duration="900">
+              <div class="icon-box">
+                <ion-icon name="laptop-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Courses</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item" data-aos="fade-right" data-aos-duration="1100">
+
+                <h4 class="h4 timeline-item-title">Dicoding Data Scientist Expert Awardee</h4>
+
+                <span>2024 - 2026</span>
+
+                <p class="timeline-text">
+                  Scholarship from Dicoding Indonesia by IDCamp
+                </p>
+
+                <figure class="">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img data-aos="flip-left" src="./assets/images/idcamp.png" alt="certificate" loading="lazy">
+                </figure>
+
+              </li>
+
+              <li class="timeline-item" data-aos="fade-right" data-aos-duration="1100">
+
+                <h4 class="h4 timeline-item-title">Harvard's CS50</h4>
+
+                <span>2024</span>
+
+                <p class="timeline-text">
+                  Open Courseware from Harvard University
+                </p>
+
+                <figure class="">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img data-aos="flip-left" src="./assets/images/CS50x.png" alt="certificate" loading="lazy">
+                </figure>
+
+              </li>
+
+
+            </ol>
+
+          </section>
+
+          <section class="timeline">
+
+            <div class="title-wrapper" data-aos="fade-right" data-aos-duration="900">
+              <div class="icon-box">
+                <ion-icon name="trophy-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Awards</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item" data-aos="fade-right" data-aos-duration="1100">
+
+                <h4 class="h4 timeline-item-title">2nd Place ITConvert Software Development</h4>
+
+                <span>2024 (September)</span>
+
+                <p class="timeline-text">
+                  National IT Competition organized by Jember University
+                </p>
+
+                <figure class="">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img data-aos="flip-left" src="./assets/images/2nd Place Software Development Honor.jpg"
+                    alt="certificate" loading="lazy">
+                </figure>
+
+              </li>
+
+
+              <li class="timeline-item" data-aos="fade-right" data-aos-duration="1300">
+
+                <h4 class="h4 timeline-item-title">3rd Place AI-NOVAC</h4>
+
+                <span>2024 (October)</span>
+
+                <p class="timeline-text">
+                  AI-NOVAC or Artificial Intelligence Innovation Competition is a competition held by Institut Teknologi
+                  Sumatera
+                </p>
+
+                <figure class="">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img data-aos="flip-left" src="./assets/images/ainovac.png" alt="certificate" loading="lazy">
+                </figure>
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <section class="skill">
+            <h3 class="skills-title">My Tech Stack</h3>
+            <ul class="skills-list" data-aos="fade-up">
+
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img src="./assets/images/pngaaa.com-4179045.png" alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">HTML</h4>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">CSS</h4>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/JavaScript_unofficial_logo.svg/640px-JavaScript_unofficial_logo.svg.png"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">JavaScript</h4>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/640px-Python_logo_01.svg.png"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">Python</h4>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img
+                    src="https://camo.githubusercontent.com/6bda50ab133175c1dca7aebfc89410603b2259dd9399fa0e62259263c009ae39/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f74656e736f72666c6f772f74656e736f72666c6f772d69636f6e2e737667"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">TensorFlow</h4>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Keras_Logo.jpg/640px-Keras_Logo.jpg"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">Keras</h4>
+                </div>
+              </li>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img src="./assets/images/icon-flask.svg" alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">Flask</h4>
+                </div>
+              </li>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/640px-Laravel.svg.png"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">Laravel</h4>
+                </div>
+              </li>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon-box">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flutter_logo.svg/640px-Flutter_logo.svg.png"
+                    alt="TensorFlow icon">
+                </div>
+                <div class="skill-content-box">
+                  <h4 class="h4 skill-item-title">Flutter</h4>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <footer>
+
+            <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
+
+          </footer>
+        </article>
+
+
+
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects" data-aos="fade-up">
+
+            <!-- <ul class="filter-list">
+  
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+  
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+  
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+  
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+  
+            </ul> -->
+
+            <div class="filter-select-box">
+
+              <button data-select>
+
+                <!-- <div class="select-value" data-select-value>Select category</div> -->
+                <!-- 
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div> -->
+
+              </button>
+
+              <ul class="select-list">
+
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <ul class="project-list">
+
+              <li class="project-item  active" data-filter-item data-category="web development" data-aos="flip-left">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left" src="./assets/images/thumbnail.png" alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Eunoia: Mental Health mobile Application enhanced with AI</h3>
+
+                  <p class="project-category">Web development, Progressive Web Application, Artificial Intelligence
+                    (NLP)
+                  </p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left" src="./assets/images/skinsense.png" alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">SkinSenseAI</h3>
+
+                  <p class="project-category">Mobile development, Computer Vision</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left"
+                      src="https://www.lystloc.com/blog/wp-content/uploads/2022/11/ezgif.com-gif-maker-6.webp"
+                      alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Face Recognition Attendance System</h3>
+
+                  <p class="project-category">Web development, Computer vision</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left"
+                      src="./assets/images/Leonardo_Phoenix_Create_a_vibrant_illustration_of_a_fruit_clas_1.jpg"
+                      alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Fresh and Rotten Fruit Classificatoin</h3>
+
+                  <p class="project-category">Mobile development, Computer vision</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left" src="./assets/images/student-dropoout.jpg" alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Student Dropout Prediction</h3>
+
+                  <p class="project-category">Dashboard, Machine learning</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left"
+                      src="https://editor.analyticsvidhya.com/uploads/50662High-employee-turnover.jpg" alt="finance"
+                      loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Employee Attrition Prediction</h3>
+
+                  <p class="project-category">Dashboard, Machine learning</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left"
+                      src="https://cdn.prod.website-files.com/62010c298ad50e2f90f75c5f/631ee182322acf775d16cbff_featured%20image1.png"
+                      alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Analyzing Data of Public E-Commerce Dataset </h3>
+
+                  <p class="project-category">Data analysis</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left" src="https://miro.medium.com/v2/resize:fit:1400/0*tnawAepjUnlyIY7U"
+                      alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Mood Sentiment Analysis</h3>
+
+                  <p class="project-category">Natural Language Processing, Machine Learning</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left"
+                      src="https://editor.analyticsvidhya.com/uploads/3951420200902_blog_-forecasting-with-time-series-models-using-python_pt2_website.png"
+                      alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Machine Learning Modeling with Sales Time Series Data</h3>
+
+                  <p class="project-category">Deep learning</p>
+
+                </a>
+              </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img data-aos="flip-left" src="./assets/images/finance_2024.png" alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">CS50's Finance</h3>
+
+                  <p class="project-category">Web Development</p>
+
+                </a>
+              </li>
+
+            </ul>
+
+          </section>
+          <footer>
+
+            <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
+
+          </footer>
+        </article>
+
+
+
+
+
+        <!--
+          - #BLOG
+        -->
+        <!-- 
+        <article class="blog" data-page="blog">
+  
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+  
+          <section class="blog-posts">
+  
+            <ul class="blog-posts-list">
+  
+              <li class="blog-post-item">
+                <a href="#">
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+  
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+  
+                      <span class="dot"></span>
+  
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+  
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    </p>
+  
+                  </div>
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a href="#">
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+  
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+  
+                      <span class="dot"></span>
+  
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+  
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    </p>
+  
+                  </div>
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a href="#">
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+  
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+  
+                      <span class="dot"></span>
+  
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+  
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    </p>
+  
+                  </div>
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a href="#">
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+  
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+  
+                      <span class="dot"></span>
+  
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+  
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    </p>
+  
+                  </div>
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a href="#">
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+  
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+  
+                      <span class="dot"></span>
+  
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+  
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+  
+                  </div>
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a href="#">
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+  
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+  
+                      <span class="dot"></span>
+  
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+  
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    </p>
+  
+                  </div>
+  
+                </a>
+              </li>
+  
+            </ul>
+  
+          </section>
+          <footer>
+  
+            <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
+  
+          </footer>
+        </article> -->
+
+
+
+
+
+        <!--
+          - #CONTACT
+        -->
+
+        <article class="contact" data-page="contact">
+
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5872786009736!2d107.72293371057535!3d-6.939828293031251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1729910769061!5m2!1sen!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+                <input type="email" name="email" class="form-input" placeholder="Email address" required
+                  data-form-input>
+              </div>
+
+              <textarea name="message" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+
+            </form>
+
+          </section>
+          <footer>
+
+            <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
+
+          </footer>
+        </article>
+
+      </div>
+
+    </main>
+
+  </div>
+
+
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
