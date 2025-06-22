@@ -1,701 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reyhan Mochamad Fabian - Portfolio</title>
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
 
-  <body>
-    <!-- Unified Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-main">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <div class="avatar-sm me-2"></div>
-          <span class="text-light">IanCodez</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-        >
-          <span class="navbar-toggler-icon text-light">
-            <i class="fas fa-bars"></i>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reyhan Mochamad Fabian - Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Unified Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-main">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="avatar-sm me-2"></div>
+        <span class="text-light">IanCodez</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon text-light">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Banner/Landing Page -->
-    <div id="banner" class="banner">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h1 class="display-4 fw-bold mb-4">Hello, Welcome to my Page!</h1>
-            <div class="typing-text">
-              I'm a <span id="typed-text" class="fw-bold"></span>
-            </div>
-            <a href="#about" class="btn btn-primary-custom mt-3"
-              >Explore My Portfolio</a
-            >
+  <!-- Banner/Landing Page -->
+  <div id="banner" class="banner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-4">Hello, Welcome to my Page!</h1>
+          <div class="typing-text">
+            I'm a <span id="typed-text" class="fw-bold"></span>
           </div>
+          <a href="#about" class="btn btn-primary-custom mt-3">Explore My Portfolio</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Main Content -->
-    <div id="main-content" class="container py-5">
-      <div class="row">
-        <!-- Sidebar -->
-        <section id="sidebar" class="col-lg-4 sticky-sidebar">
-          <div class="card-custom" data-aos="fade-right">
-            <div class="avatar">
-              <img
-                src="./assets/images/KESUKAANKU.jpg"
-                alt="Reyhan Mochamad Fabian"
-                style="width: 100%; height: auto; transform: scale(3.5)"
-              />
-            </div>
+  <!-- Main Content -->
+  <div id="main-content" class="container py-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <section id="sidebar" class="col-lg-4 sticky-sidebar">
+        <div class="card-custom" data-aos="fade-right">
+          <div class="avatar">
+            <img src="./assets/images/KESUKAANKU.jpg" alt="Reyhan Mochamad Fabian"
+              style="width: 100%; height: auto; transform: scale(3.5)" />
+          </div>
 
-            <h2 class="text-center mb-3" style="color: #dbeafe; font-size: 1.5rem">
-              Reyhan Mochamad Fabian
-            </h2>
+          <h2 class="text-center mb-3" style="color: #dbeafe; font-size: 1.5rem">
+            Reyhan Mochamad Fabian
+          </h2>
 
-            <div class="d-flex flex-column align-items-center mb-3 text-center">
-              <span class="title-badge mb-2">Developer</span>
-              <span class="title-badge mb-2">Machine Learning</span>
-              <span class="title-badge">Data Science</span>
-            </div>
+          <div class="d-flex flex-column align-items-center mb-3 text-center">
+            <span class="title-badge mb-2">Developer</span>
+            <span class="title-badge mb-2">Machine Learning</span>
+            <span class="title-badge">Data Science</span>
+          </div>
 
-            <div class="mb-4">
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div>
-                  <p class="mb-0" style="color: #dbeafe">Email</p>
-                  <p class="mb-0">rey.softeng@gmail.com</p>
-                </div>
+          <div class="mb-4">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
               </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div>
-                  <p class="mb-0" style="color: #dbeafe">Phone</p>
-                  <p class="mb-0">+62 813-8698-3669</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-birthday-cake"></i>
-                </div>
-                <div>
-                  <p class="mb-0" style="color: #dbeafe">Birthday</p>
-                  <p class="mb-0">15 July, 2002</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div>
-                  <p class="mb-0" style="color: #dbeafe">Location</p>
-                  <p class="mb-0">West Java, Bandung, Indonesia</p>
-                </div>
+              <div>
+                <p class="mb-0" style="color: #dbeafe">Email</p>
+                <p class="mb-0">rey.softeng@gmail.com</p>
               </div>
             </div>
 
-            <div class="social-links">
-              <a href="https://github.com/reyhan-mf" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/reyhan-mf/details/"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="https://www.instagram.com/reyhanmf50/" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <p class="mb-0" style="color: #dbeafe">Phone</p>
+                <p class="mb-0">+62 813-8698-3669</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-birthday-cake"></i>
+              </div>
+              <div>
+                <p class="mb-0" style="color: #dbeafe">Birthday</p>
+                <p class="mb-0">15 July, 2002</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <p class="mb-0" style="color: #dbeafe">Location</p>
+                <p class="mb-0">West Java, Bandung, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/reyhan-mf" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/reyhan-mf/details/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/reyhanmf50/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Content -->
+      <div class="col-lg-8">
+        <!-- About Section -->
+        <section id="about" class="card-custom" data-aos="fade-up">
+          <h3 class="section-title">About Me</h3>
+          <p style="color: #dbeafe">
+            Reyhan Mochamad Fabian is a student at Universitas Pendidikan
+            Indonesia (UPI) with a strong interest in computer science,
+            particularly in artificial intelligence.
+          </p>
+          <p style="color: #dbeafe">
+            Reyhan has experience using various frameworks such as TensorFlow
+            and has won two awards: second place in the ITConvert competition
+            and third place in the AI-NOVAC competition.
+          </p>
+
+          <div class="mt-5">
+            <h4 class="mb-4" style="color: #dbeafe">Services</h4>
+            <div class="row">
+              <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-duration="500">
+                <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                  </div>
+                  <h5 style="color: #dbeafe">
+                    Data Analytics & Visualization
+                  </h5>
+                  <p class="mb-0" style="color: #dbeafe">
+                    The most modern and high-quality data Analytics and
+                    Visualization made at a professional level.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-duration="500">
+                <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h5 style="color: #dbeafe">Web Development</h5>
+                  <p class="mb-0" style="color: #dbeafe">
+                    High-quality development of sites at the professional
+                    level.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-duration="500">
+                <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h5 style="color: #dbeafe">Mobile Apps</h5>
+                  <p class="mb-0" style="color: #dbeafe">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-duration="500">
+                <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <h5 style="color: #dbeafe">Artificial Intelligence</h5>
+                  <p class="mb-0" style="color: #dbeafe">
+                    Develop AI for your business to make it more efficient.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <h4 class="mb-4" style="color: #dbeafe">Our Team!</h4>
+            <div class="row">
+              <div class="col-md-4 mb-4" data-aos="zoom-out" data-aos-duration="500">
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="./assets/images/fahmi.jpg" alt="Fahmi Nursafaaat"
+                      style="transform: translateY(10px) scale(1.5)" />
+                  </div>
+                  <h5 style="color: #dbeafe">Fahmi Nursafaaat</h5>
+                  <p class="mb-0 small" style="color: #dbeafe">
+                    Web Developer, Mobile Developer, Security Expert
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="zoom-out" data-aos-duration="500">
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="./assets/images/FirdaRS.jpg" alt="Firda Rosela S" />
+                  </div>
+                  <h5 style="color: #dbeafe">Firda Rosela S</h5>
+                  <p class="mb-0 small" style="color: #dbeafe">
+                    UI/UX Designer
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4" data-aos="zoom-out" data-aos-duration="500">
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="./assets/images/fajar.jpg" alt="M. Fajar Jati. P" />
+                  </div>
+                  <h5 style="color: #dbeafe">M. Fajar Jati. P</h5>
+                  <p class="mb-0 small" style="color: #dbeafe">
+                    UI/UX Designer, Web Developer, Mobile Developer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <h4 class="mb-4" style="color: #dbeafe">Clients</h4>
+            <div class="row">
+              <div class="col-6 col-md-3 mb-4">
+                <div class="client-logo">
+                  <img src="https://itconvert.himasif.id/assets/itc.png" alt="Client Logo" class="img-fluid"
+                    style="max-height: 80px" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <div class="client-logo">
+                  <img src="./assets/images/hima-removebg-preview.png" alt="Client Logo" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <div class="client-logo">
+                  <img src="./assets/images/ITRC.png" alt="Client Logo" class="img-fluid" style="max-height: 80px" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <div class="client-logo">
+                  <img src="./assets/images/pngegg.png" alt="Client Logo" class="img-fluid" style="max-height: 90px" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <!-- Main Content -->
-        <div class="col-lg-8">
-          <!-- About Section -->
-          <section id="about" class="card-custom" data-aos="fade-up">
-            <h3 class="section-title">About Me</h3>
-            <p style="color: #dbeafe">
-              Reyhan Mochamad Fabian is a student at Universitas Pendidikan
-              Indonesia (UPI) with a strong interest in computer science,
-              particularly in artificial intelligence.
-            </p>
-            <p style="color: #dbeafe">
-              Reyhan has experience using various frameworks such as TensorFlow
-              and has won two awards: second place in the ITConvert competition
-              and third place in the AI-NOVAC competition.
-            </p>
+        <!-- Resume Section -->
+        <section id="resume" class="card-custom" data-aos="fade-up">
+          <h3 class="section-title">Resume</h3>
 
-            <div class="mt-5">
-              <h4 class="mb-4" style="color: #dbeafe">Services</h4>
-              <div class="row">
-                <div
-                  class="col-md-6 mb-4"
-                  data-aos="flip-up"
-                  data-aos-duration="500"
-                >
-                  <div class="service-card">
-                    <div class="service-icon">
-                      <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    </div>
-                    <h5 style="color: #dbeafe">
-                      Data Analytics & Visualization
-                    </h5>
-                    <p class="mb-0" style="color: #dbeafe">
-                      The most modern and high-quality data Analytics and
-                      Visualization made at a professional level.
-                    </p>
-                  </div>
+          <div class="mb-5">
+            <h4 class="d-flex align-items-center gap-2 mb-4" style="color: #dbeafe">
+              <i class="fas fa-graduation-cap"></i> Education
+            </h4>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="500">
+              <h5 style="color: #dbeafe">SMAN 1 Rancabungur</h5>
+              <p class="text-primary">2019-2022</p>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="700">
+              <h5 style="color: #dbeafe">Universitas Pendidikan Indonesia</h5>
+              <p class="text-primary">2022 — 2026 (Expected)</p>
+              <p class="mb-0" style="color: #dbeafe">
+                Majoring Computer Engineering
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="d-flex align-items-center gap-2 mb-4" style="color: #dbeafe">
+              <i class="fas fa-certificate"></i> Courses
+            </h4>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1100">
+              <h5 style="color: #dbeafe">
+                Dicoding Data Scientist Expert Awardee
+              </h5>
+              <p class="text-primary">2024</p>
+              <p class="mb-0" style="color: #dbeafe">
+                Scholarship from Dicoding Indonesia by IDCamp
+              </p>
+              <div class="mt-3">
+                <img src="./assets/images/idcamp.png" alt="Harvard CS50 Certificate"
+                  class="img-fluid rounded certificate-image" data-aos="flip-left" style="max-height: 300px"
+                  onclick="openImageModal(this)" />
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1100">
+              <h5 style="color: #dbeafe">Harvard's CS50</h5>
+              <p class="text-primary">2024</p>
+              <p class="mb-0" style="color: #dbeafe">
+                Open Courseware from Harvard University
+              </p>
+              <div class="mt-3">
+                <img src="./assets/images/CS50x.png" alt="Harvard CS50 Certificate"
+                  class="img-fluid rounded certificate-image" data-aos="flip-left" style="max-height: 300px"
+                  onclick="openImageModal(this)" />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="d-flex align-items-center gap-2 mb-4" style="color: #dbeafe">
+              <i class="fas fa-trophy"></i> Awards
+            </h4>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1100">
+              <h5 style="color: #dbeafe">
+                2nd Place ITConvert Software Development
+              </h5>
+              <p class="text-primary">2024 (September)</p>
+              <p class="mb-0" style="color: #dbeafe">
+                National IT Competition organized by Jember University
+              </p>
+              <div class="mt-3">
+                <img class="img-fluid rounded certificate-image"
+                  src="./assets/images/2nd Place Software Development Honor.jpg" alt="Certificate"
+                  class="img-fluid rounded" data-aos="flip-left" style="max-height: 300px"
+                  onclick="openImageModal(this)" />
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1300">
+              <h5 style="color: #dbeafe">3rd Place AI-NOVAC</h5>
+              <p class="text-primary">2024 (October)</p>
+              <p class="mb-0" style="color: #dbeafe">
+                AI-NOVAC or Artificial Intelligence Innovation Competition is
+                a competition held by Institut Teknologi Sumatera
+              </p>
+              <div class="mt-3">
+                <img class="img-fluid rounded certificate-image" src="./assets/images/ainovac.png" alt="Certificate"
+                  class="img-fluid rounded" data-aos="flip-left" style="max-height: 300px" />
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1300">
+              <h5 style="color: #dbeafe">
+                1st Place for Academic and Non Academic Excellence in TEKKOM
+                Dies Natalis 2025
+              </h5>
+              <p class="text-primary">2025 (June)</p>
+              <p class="mb-0" style="color: #dbeafe"></p>
+              <div class="mt-3">
+                <img class="img-fluid rounded certificate-image" src="./assets/images/sertif-dn.png" alt="Certificate"
+                  class="img-fluid rounded" data-aos="flip-left" style="max-height: 300px"
+                  onclick="openImageModal(this)" />
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1300">
+              <h5 style="color: #dbeafe">
+                1st Place for Best Project in Software Engineering Course
+              </h5>
+              <p class="text-primary">2025 (June)</p>
+              <p class="mb-0" style="color: #dbeafe"></p>
+              <div class="mt-3">
+                <img class="img-fluid rounded certificate-image" src="./assets/images/sertif-rpl.png" alt="Certificate"
+                  class="img-fluid rounded" data-aos="flip-left" style="max-height: 300px"
+                  onclick="openImageModal(this)" />
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="1300">
+              <h5 style="color: #dbeafe">
+                2nd Place for Best Project in Web Development Course
+              </h5>
+              <p class="text-primary">2025 (June)</p>
+              <p class="mb-0" style="color: #dbeafe"></p>
+              <div class="mt-3">
+                <img class="img-fluid rounded certificate-image" src="./assets/images/sertif-pemweb.png"
+                  alt="Certificate" class="img-fluid rounded" data-aos="flip-left" style="max-height: 300px"
+                  onclick="openImageModal(this)" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="mb-4" style="color: #dbeafe">My Tech Stack</h4>
+            <div class="d-flex flex-wrap">
+              <span class="skill-badge">
+                <i class="fab fa-html5"></i> HTML
+              </span>
+              <span class="skill-badge">
+                <i class="fab fa-css3-alt"></i> CSS
+              </span>
+              <span class="skill-badge">
+                <i class="fab fa-js"></i> JavaScript
+              </span>
+              <span class="skill-badge">
+                <i class="fab fa-python"></i> Python
+              </span>
+              <span class="skill-badge">
+                <i class="fas fa-brain"></i> TensorFlow
+              </span>
+              <span class="skill-badge">
+                <i class="fas fa-project-diagram"></i> Keras
+              </span>
+              <span class="skill-badge">
+                <i class="fas fa-flask"></i> Flask
+              </span>
+              <span class="skill-badge">
+                <i class="fab fa-laravel"></i> Laravel
+              </span>
+              <span class="skill-badge">
+                <i class="fab fa-android"></i> Flutter
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="card-custom" data-aos="fade-up">
+          <h3 class="section-title">Portfolio</h3>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-aos="flip-left">
+              <div class="project-card" style="cursor: pointer;" onclick="openProjectModal('eunoia')">
+                <div class="project-img">
+                  <img src="./assets/images/eunoia.png" alt="Eunoia" style="object-fit: fill;" />
                 </div>
-                <div
-                  class="col-md-6 mb-4"
-                  data-aos="flip-up"
-                  data-aos-duration="500"
-                >
-                  <div class="service-card">
-                    <div class="service-icon">
-                      <i class="fas fa-code"></i>
-                    </div>
-                    <h5 style="color: #dbeafe">Web Development</h5>
-                    <p class="mb-0" style="color: #dbeafe">
-                      High-quality development of sites at the professional
-                      level.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 mb-4"
-                  data-aos="flip-up"
-                  data-aos-duration="500"
-                >
-                  <div class="service-card">
-                    <div class="service-icon">
-                      <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h5 style="color: #dbeafe">Mobile Apps</h5>
-                    <p class="mb-0" style="color: #dbeafe">
-                      Professional development of applications for iOS and
-                      Android.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 mb-4"
-                  data-aos="flip-up"
-                  data-aos-duration="500"
-                >
-                  <div class="service-card">
-                    <div class="service-icon">
-                      <i class="fas fa-brain"></i>
-                    </div>
-                    <h5 style="color: #dbeafe">Artificial Intelligence</h5>
-                    <p class="mb-0" style="color: #dbeafe">
-                      Develop AI for your business to make it more efficient.
-                    </p>
-                  </div>
+                <div class="project-content">
+                  <h5 style="color: #dbeafe">
+                    Eunoia: Mental Health mobile Application enhanced with AI
+                  </h5>
+                  <p class="mb-0 small" style="color: #93c5fd">
+                    Web development, Progressive Web Application, Artificial
+                    Intelligence (NLP)
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="mt-5">
-              <h4 class="mb-4" style="color: #dbeafe">Our Team!</h4>
-              <div class="row">
-                <div
-                  class="col-md-4 mb-4"
-                  data-aos="zoom-out"
-                  data-aos-duration="500"
-                >
-                  <div class="team-card">
-                    <div class="team-avatar">
-                      <img
-                        src="./assets/images/fahmi.jpg"
-                        alt="Fahmi Nursafaaat"
-                        style="transform: translateY(10px) scale(1.5)"
-                      />
-                    </div>
-                    <h5 style="color: #dbeafe">Fahmi Nursafaaat</h5>
-                    <p class="mb-0 small" style="color: #dbeafe">
-                      Web Developer, Mobile Developer, Security Expert
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 mb-4"
-                  data-aos="zoom-out"
-                  data-aos-duration="500"
-                >
-                  <div class="team-card">
-                    <div class="team-avatar">
-                      <img
-                        src="./assets/images/FirdaRS.jpg"
-                        alt="Firda Rosela S"
-                      />
-                    </div>
-                    <h5 style="color: #dbeafe">Firda Rosela S</h5>
-                    <p class="mb-0 small" style="color: #dbeafe">
-                      UI/UX Designer
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 mb-4"
-                  data-aos="zoom-out"
-                  data-aos-duration="500"
-                >
-                  <div class="team-card">
-                    <div class="team-avatar">
-                      <img
-                        src="./assets/images/fajar.jpg"
-                        alt="M. Fajar Jati. P"
-                      />
-                    </div>
-                    <h5 style="color: #dbeafe">M. Fajar Jati. P</h5>
-                    <p class="mb-0 small" style="color: #dbeafe">
-                      UI/UX Designer, Web Developer, Mobile Developer
-                    </p>
-                  </div>
-                </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card-custom" data-aos="fade-up">
+          <h3 class="section-title">Contact</h3>
+
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.49347837589!2d107.58675784128906!3d-6.861004722549899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6b943c2c5ff%3A0xee36226510a79e76!2sUniversitas%20Pendidikan%20Indonesia!5e0!3m2!1sen!2sid!4v1750610342310!5m2!1sen!2sid"
+              width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5872786009736!2d107.72293371057535!3d-6.939828293031251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1729910769061!5m2!1sen!2sid"
+              width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          </div>
+
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Full name" />
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email address" />
               </div>
             </div>
-
-            <div class="mt-5">
-              <h4 class="mb-4" style="color: #dbeafe">Clients</h4>
-              <div class="row">
-                <div class="col-6 col-md-3 mb-4">
-                  <div class="client-logo">
-                    <img
-                      src="https://itconvert.himasif.id/assets/itc.png"
-                      alt="Client Logo"
-                      class="img-fluid"
-                      style="max-height: 80px"
-                    />
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                  <div class="client-logo">
-                    <img
-                      src="./assets/images/hima-removebg-preview.png"
-                      alt="Client Logo"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                  <div class="client-logo">
-                    <img
-                      src="./assets/images/ITRC.png"
-                      alt="Client Logo"
-                      class="img-fluid"
-                      style="max-height: 80px"
-                    />
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                  <div class="client-logo">
-                    <img
-                      src="./assets/images/pngegg.png"
-                      alt="Client Logo"
-                      class="img-fluid"
-                      style="max-height: 90px"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Resume Section -->
-          <section id="resume" class="card-custom" data-aos="fade-up">
-            <h3 class="section-title">Resume</h3>
-
-            <div class="mb-5">
-              <h4
-                class="d-flex align-items-center gap-2 mb-4"
-                style="color: #dbeafe"
-              >
-                <i class="fas fa-graduation-cap"></i> Education
-              </h4>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="500"
-              >
-                <h5 style="color: #dbeafe">SMAN 1 Rancabungur</h5>
-                <p class="text-primary">2019-2022</p>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="700"
-              >
-                <h5 style="color: #dbeafe">Universitas Pendidikan Indonesia</h5>
-                <p class="text-primary">2022 — 2026 (Expected)</p>
-                <p class="mb-0" style="color: #dbeafe">
-                  Majoring Computer Engineering
-                </p>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h4
-                class="d-flex align-items-center gap-2 mb-4"
-                style="color: #dbeafe"
-              >
-                <i class="fas fa-certificate"></i> Courses
-              </h4>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1100"
-              >
-                <h5 style="color: #dbeafe">
-                  Dicoding Data Scientist Expert Awardee
-                </h5>
-                <p class="text-primary">2024</p>
-                <p class="mb-0" style="color: #dbeafe">
-                  Scholarship from Dicoding Indonesia by IDCamp
-                </p>
-                <div class="mt-3">
-                  <img
-                    src="./assets/images/idcamp.png"
-                    alt="Harvard CS50 Certificate"
-                    class="img-fluid rounded certificate-image"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                    onclick="openImageModal(this)"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1100"
-              >
-                <h5 style="color: #dbeafe">Harvard's CS50</h5>
-                <p class="text-primary">2024</p>
-                <p class="mb-0" style="color: #dbeafe">
-                  Open Courseware from Harvard University
-                </p>
-                <div class="mt-3">
-                  <img
-                    src="./assets/images/CS50x.png"
-                    alt="Harvard CS50 Certificate"
-                    class="img-fluid rounded certificate-image"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                    onclick="openImageModal(this)"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h4
-                class="d-flex align-items-center gap-2 mb-4"
-                style="color: #dbeafe"
-              >
-                <i class="fas fa-trophy"></i> Awards
-              </h4>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1100"
-              >
-                <h5 style="color: #dbeafe">
-                  2nd Place ITConvert Software Development
-                </h5>
-                <p class="text-primary">2024 (September)</p>
-                <p class="mb-0" style="color: #dbeafe">
-                  National IT Competition organized by Jember University
-                </p>
-                <div class="mt-3">
-                  <img
-                    class="img-fluid rounded certificate-image"
-                    src="./assets/images/2nd Place Software Development Honor.jpg"
-                    alt="Certificate"
-                    class="img-fluid rounded"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                    onclick="openImageModal(this)"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1300"
-              >
-                <h5 style="color: #dbeafe">3rd Place AI-NOVAC</h5>
-                <p class="text-primary">2024 (October)</p>
-                <p class="mb-0" style="color: #dbeafe">
-                  AI-NOVAC or Artificial Intelligence Innovation Competition is
-                  a competition held by Institut Teknologi Sumatera
-                </p>
-                <div class="mt-3">
-                  <img
-                    class="img-fluid rounded certificate-image"
-                    src="./assets/images/ainovac.png"
-                    alt="Certificate"
-                    class="img-fluid rounded"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1300"
-              >
-                <h5 style="color: #dbeafe">
-                  1st Place for Academic and Non Academic Excellence in TEKKOM
-                  Dies Natalis 2025
-                </h5>
-                <p class="text-primary">2025 (June)</p>
-                <p class="mb-0" style="color: #dbeafe"></p>
-                <div class="mt-3">
-                  <img
-                    class="img-fluid rounded certificate-image"
-                    src="./assets/images/sertif-dn.png"
-                    alt="Certificate"
-                    class="img-fluid rounded"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                    onclick="openImageModal(this)"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1300"
-              >
-                <h5 style="color: #dbeafe">
-                  1st Place for Best Project in Software Engineering Course
-                </h5>
-                <p class="text-primary">2025 (June)</p>
-                <p class="mb-0" style="color: #dbeafe"></p>
-                <div class="mt-3">
-                  <img
-                    class="img-fluid rounded certificate-image"
-                    src="./assets/images/sertif-rpl.png"
-                    alt="Certificate"
-                    class="img-fluid rounded"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                    onclick="openImageModal(this)"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="timeline-item"
-                data-aos="fade-right"
-                data-aos-duration="1300"
-              >
-                <h5 style="color: #dbeafe">
-                  2nd Place for Best Project in Web Development Course
-                </h5>
-                <p class="text-primary">2025 (June)</p>
-                <p class="mb-0" style="color: #dbeafe"></p>
-                <div class="mt-3">
-                  <img
-                    class="img-fluid rounded certificate-image"
-                    src="./assets/images/sertif-pemweb.png"
-                    alt="Certificate"
-                    class="img-fluid rounded"
-                    data-aos="flip-left"
-                    style="max-height: 300px"
-                    onclick="openImageModal(this)"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h4 class="mb-4" style="color: #dbeafe">My Tech Stack</h4>
-              <div class="d-flex flex-wrap">
-                <span class="skill-badge">
-                  <i class="fab fa-html5"></i> HTML
-                </span>
-                <span class="skill-badge">
-                  <i class="fab fa-css3-alt"></i> CSS
-                </span>
-                <span class="skill-badge">
-                  <i class="fab fa-js"></i> JavaScript
-                </span>
-                <span class="skill-badge">
-                  <i class="fab fa-python"></i> Python
-                </span>
-                <span class="skill-badge">
-                  <i class="fas fa-brain"></i> TensorFlow
-                </span>
-                <span class="skill-badge">
-                  <i class="fas fa-project-diagram"></i> Keras
-                </span>
-                <span class="skill-badge">
-                  <i class="fas fa-flask"></i> Flask
-                </span>
-                <span class="skill-badge">
-                  <i class="fab fa-laravel"></i> Laravel
-                </span>
-                <span class="skill-badge">
-                  <i class="fab fa-android"></i> Flutter
-                </span>
-              </div>
-            </div>
-          </section>
-
-          <!-- Portfolio Section -->
-          <section id="portfolio" class="card-custom" data-aos="fade-up">
-            <h3 class="section-title">Portfolio</h3>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col" data-aos="flip-left">
-                <div class="project-card" style="cursor: pointer;" onclick="openProjectModal('eunoia')">
-                  <div class="project-img">
-                    <img
-                      src="./assets/images/eunoia.png"
-                      alt="Eunoia"
-                      style="object-fit: fill;"
-                    />
-                  </div>
-                  <div class="project-content">
-                    <h5 style="color: #dbeafe">
-                      Eunoia: Mental Health mobile Application enhanced with AI
-                    </h5>
-                    <p class="mb-0 small" style="color: #93c5fd">
-                      Web development, Progressive Web Application, Artificial
-                      Intelligence (NLP)
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-          </section>
-
-          <!-- Contact Section -->
-          <section id="contact" class="card-custom" data-aos="fade-up">
-            <h3 class="section-title">Contact</h3>
-
-            <div class="contact-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5872786009736!2d107.72293371057535!3d-6.939828293031251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1729910769061!5m2!1sen!2sid"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Full name"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email address"
-                  />
-                </div>
-              </div>
-              <textarea
-                class="form-control"
-                rows="5"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn-primary-custom w-100">
-                <i class="fas fa-paper-plane me-2"></i> Send Message
-              </button>
-            </form>
-          </section>
-        </div>
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-primary-custom w-100">
+              <i class="fas fa-paper-plane me-2"></i> Send Message
+            </button>
+          </form>
+        </section>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jawa Gemilang. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    <!-- ...existing code... -->
+  <!-- ...existing code... -->
 
-    <script src="./assets/js/script.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="./assets/js/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
