@@ -1,165 +1,114 @@
-'use strict';
 
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
 
+      // Typing animation for the banner
+      const phrases = [
+        { text: "Developer", colorClass: "color-developer" },
+        { text: "Data Scientist", colorClass: "color-data-scientist" },
+        { text: "Machine Learning Engineer", colorClass: "color-ml-engineer" },
+      ];
 
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+      let i = 0;
+      let j = 0;
+      let currentPhrase = [];
+      let isDeleting = false;
+      let isEnd = false;
 
+      function loop() {
+        const typedText = document.getElementById("typed-text");
+        isEnd = false;
+        typedText.innerHTML = currentPhrase.join("");
 
+        // Set color based on the current phrase
+        typedText.className = phrases[i].colorClass;
 
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+        if (i < phrases.length) {
+          if (!isDeleting && j <= phrases[i].text.length) {
+            currentPhrase.push(phrases[i].text[j]);
+            j++;
+            typedText.innerHTML = currentPhrase.join("");
+          }
 
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+          if (isDeleting && j <= phrases[i].text.length) {
+            currentPhrase.pop(phrases[i].text[j]);
+            j--;
+            typedText.innerHTML = currentPhrase.join("");
+          }
 
+          if (j == phrases[i].text.length) {
+            isEnd = true;
+            isDeleting = true;
+          }
 
-
-// testimonials variables
-// const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-// const modalContainer = document.querySelector("[data-modal-container]");
-// const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-// const overlay = document.querySelector("[data-overlay]");
-
-// // modal variable
-// const modalImg = document.querySelector("[data-modal-img]");
-// const modalTitle = document.querySelector("[data-modal-title]");
-// const modalText = document.querySelector("[data-modal-text]");
-
-// // modal toggle function
-// const testimonialsModalFunc = function () {
-//   modalContainer.classList.toggle("active");
-//   overlay.classList.toggle("active");
-// }
-
-// // add click event to all modal items
-// for (let i = 0; i < testimonialsItem.length; i++) {
-
-//   testimonialsItem[i].addEventListener("click", function () {
-
-//     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-//     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-//     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-//     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-//     testimonialsModalFunc();
-
-//   });
-
-// }
-
-// // add click event to modal close button
-// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-// overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-
-  }
-
-}
-
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
-
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// Add event to all nav links
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-    
-    for (let j = 0; j < pages.length; j++) {
-      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
-        pages[j].classList.add("active");
-        navigationLinks[j].classList.add("active");
-        window.scrollTo(0, 0);
-        
-        // Refresh AOS animations for the new active page
-        AOS.refresh();
-      } else {
-        pages[j].classList.remove("active");
-        navigationLinks[j].classList.remove("active");
+          if (isDeleting && j === 0) {
+            currentPhrase = [];
+            isDeleting = false;
+            i++;
+            if (i === phrases.length) {
+              i = 0;
+            }
+          }
+        }
+        const speed = isEnd ? 2000 : isDeleting ? 50 : 100;
+        setTimeout(loop, speed);
       }
-    }
-  });
-}
 
-// script.js
+      loop();
 
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
 
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Update active class in navbar
+            document.querySelectorAll(".nav-link").forEach((link) => {
+              link.classList.remove("active");
+            });
+            this.classList.add("active");
+          }
+        });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar-main");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      function openImageModal(imageElement) {
+        const modal = new bootstrap.Modal(
+          document.getElementById("imageModal")
+        );
+        const modalImage = document.getElementById("modalImage");
+
+        modalImage.src = imageElement.src;
+        modalImage.alt = imageElement.alt;
+
+        modal.show();
+      }
+
+      // Close modal when clicking on the backdrop
+      document
+        .getElementById("imageModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            const modal = bootstrap.Modal.getInstance(this);
+            modal.hide();
+          }
+        });
+    
