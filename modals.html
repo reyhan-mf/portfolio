@@ -1,0 +1,64 @@
+<!-- Image Modal -->
+<div
+  class="modal fade"
+  id="imageModal"
+  tabindex="-1"
+  aria-labelledby="imageModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body text-center p-0">
+        <img
+          id="modalImage"
+          src=""
+          alt="Certificate"
+          class="img-fluid rounded"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal -->
+<div
+  class="modal fade"
+  id="projectModal"
+  tabindex="-1"
+  aria-labelledby="projectModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div
+      class="modal-content"
+      style="
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        border: 1px solid #374151;
+        border-radius: 15px;
+      "
+    >
+      <div
+        class="modal-header border-bottom"
+        style="border-color: #4b5563 !important"
+      >
+        <button 
+          type="button" 
+          class="btn ms-auto" 
+          data-bs-dismiss="modal" 
+          aria-label="Close"
+          style="background: none; border: none; color: white; font-size: 2.5rem; padding: 0.25rem 0.5rem;"
+        >
+          &times;
+        </button>
+      </div>
+      <div
+        class="modal-body"
+        style="max-height: 85vh; overflow-y: auto; background-color: #1e293b; padding: 2rem;"
+      >
+        <div id="projectContent">
+          <!-- Project content will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
