@@ -445,6 +445,7 @@ footer {
 }
 
 /* Mobile navbar adjustments */
+/* Mobile navbar adjustments */
 @media (max-width: 991.98px) {
   .banner {
     padding: 0 1.5rem;
@@ -453,15 +454,23 @@ footer {
   .typing-text {
     font-size: 1.35rem;
   }
-
+  
+  /* Hide hamburger button */
+  .navbar-toggler {
+    display: none !important;
+  }
+  
+  /* Hide navbar content */
   .navbar-collapse {
-    background: rgba(15, 23, 42, 0.95);
-    border-radius: 0 0 15px 15px;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    border: 1px solid rgba(59, 130, 246, 0.3);
+    display: none !important;
+  }
+  
+  /* Hide the entire navbar navigation */
+  .navbar-nav {
+    display: none !important;
   }
 }
+/* ...existing code... */
 
 @media (max-width: 767.98px) {
   .avatar {

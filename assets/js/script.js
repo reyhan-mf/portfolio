@@ -5,6 +5,8 @@
         once: true,
       });
 
+
+      
       // Typing animation for the banner
       const phrases = [
         { text: "Developer", colorClass: "color-developer" },
