@@ -213,6 +213,12 @@ body {
   margin-top: 1.75rem;
 }
 
+
+.social-links-team a {
+  width: 30px !important;
+  height: 30px !important;
+}
+
 .social-links a {
   width: 45px;
   height: 45px;
@@ -254,13 +260,17 @@ body {
   color: var(--primary-light);
 }
 .team-card {
-  background: rgba(30, 64, 175, 0.15);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
-  height: 230px; /* Fixed height */
+  transition: all 0.3s ease;
   border: 1px solid rgba(59, 130, 246, 0.2);
-  overflow: hidden; /* Prevent content overflow */
+  backdrop-filter: blur(10px);
+  height: 320px; /* Make all cards same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
 }
 
 .team-card:hover {
@@ -268,6 +278,27 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   background: rgba(30, 64, 175, 0.25);
   transition: all 0.3s ease;
+}
+
+.team-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Team description with fixed height */
+.team-description {
+  min-height: 3rem; /* Fixed minimum height for descriptions */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Social links positioning */
+.team-card .social-links {
+  margin-top: auto; /* Push to bottom */
 }
 
 .team-avatar {
