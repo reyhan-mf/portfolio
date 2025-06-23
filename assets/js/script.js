@@ -229,7 +229,7 @@ function loadModals() {
           
           <div class="row">
             <div class="col-md-6">
-              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-4" style="width: 100%; height: 250px; object-fit: cover;">
+              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-4" style="width: 100%; height: 250px; object-fit: fill;">
             </div>
             <div class="col-md-6">
               <h6 style="color: #93c5fd; margin-bottom: 15px;">Technologies Used</h6>
