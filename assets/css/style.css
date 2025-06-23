@@ -318,6 +318,24 @@ body {
   object-position: center;
 }
 
+/* Center the last row of team cards */
+@media (min-width: 1200px) {
+  .team-row-last {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-card-last{
+    margin: 0 32px 0 0 !important;
+  }
+
+  .team-row-last .col-md-4 {
+    flex: 0 0 33.333333%; /* Maintain the same width as col-md-4 */
+    max-width: 33.333333%;
+  }
+}
+
+
 .client-logo {
   height: 80px;
   display: flex;
