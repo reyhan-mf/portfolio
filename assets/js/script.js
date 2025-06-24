@@ -92,39 +92,52 @@
         }
       });
 
-      const projectData = {
-        eunoia: {
-          title: "Eunoia: Mental Health Mobile Application Enhanced with AI",
-          image: "./assets/images/eunoia.png",
-          description: "Eunoia is a comprehensive mental health application that leverages artificial intelligence to provide personalized support and resources for users struggling with mental health challenges. The app uses advanced NLP techniques to understand user emotions and provide appropriate interventions.",
-          technologies: ["Flutter", "Python", "TensorFlow", "Natural Language Processing", "Firebase", "REST API"],
-          features: [
-            "AI-powered mood tracking and analysis",
-            "Personalized mental health recommendations",
-            "Chat-based therapy support using NLP",
-            "Progress tracking and analytics dashboard",
-            "Crisis intervention detection and alerts",
-            "Community support features and forums",
-            "Meditation and mindfulness exercises",
-            "Professional therapist booking system"
-          ],
-          challenges: [
-            "Implementing accurate sentiment analysis for mood detection",
-            "Ensuring user privacy and data security compliance",
-            "Creating an intuitive and calming user interface design",
-            "Training AI models with diverse mental health datasets",
-            "Handling real-time crisis intervention scenarios"
-          ],
-          results: [
-            "Successfully deployed to 1000+ beta users",
-            "Achieved 85% accuracy in mood prediction algorithms",
-            "Received positive feedback for user experience (4.7/5 rating)",
-            "Winner of 2nd place in ITConvert Software Development Competition",
-            "Reduced user reported anxiety levels by 40% after 30 days of use"
-          ],
-          github: "https://github.com/reyhan-mf/eunoia",
-        }
-      };
+const projectData = {
+  eunoia: {
+    title: "Eunoia: Mental Health Mobile Application Enhanced with AI",
+    image: "./assets/images/eunoia.png",
+    description: "Eunoia is a comprehensive mental health application that leverages artificial intelligence to provide personalized support and resources for users struggling with mental health challenges. The app uses advanced NLP techniques to understand user emotions and provide appropriate interventions.",
+    technologies: [
+      { name: "Flutter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+      { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+      { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+      { name: "REST API", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { name: "NLP", logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" }
+    ],
+    features: [
+      "AI-powered mood tracking and analysis",
+      "Personalized mental health recommendations",
+      "Chat-based therapy support using NLP",
+      "Progress tracking and analytics dashboard",
+      "Crisis intervention detection and alerts",
+      "Community support features and forums",
+      "Meditation and mindfulness exercises",
+      "Professional therapist booking system"
+    ],
+    challenges: [
+      "Implementing accurate sentiment analysis for mood detection",
+      "Ensuring user privacy and data security compliance",
+      "Creating an intuitive and calming user interface design",
+      "Training AI models with diverse mental health datasets",
+      "Handling real-time crisis intervention scenarios"
+    ],
+    results: [
+      "Successfully deployed to 1000+ beta users",
+      "Achieved 85% accuracy in mood prediction algorithms",
+      "Received positive feedback for user experience (4.7/5 rating)",
+      "Winner of 2nd place in ITConvert Software Development Competition",
+      "Reduced user reported anxiety levels by 40% after 30 days of use"
+    ],
+    contributors: [
+      { name: "Reyhan Mochamad Fabian", image: "./assets/images/mountea-cat2.png", role: "AI/ML Engineer & Backend" },
+      // { name: "Fahmi Nursafaaat", image: "./assets/images/fahmi.jpg", role: "Mobile Developer & Security" },
+      // { name: "Firda Rosela S", image: "./assets/images/FirdaRS.jpg", role: "UI/UX Designer" },
+
+    ],
+    github: "https://github.com/reyhan-mf/eunoia",
+  }
+};
 
 function loadModals() {
         fetch('modals.html')
@@ -207,72 +220,89 @@ function loadModals() {
 
 
 
+function openProjectModal(projectId) {
+  const project = projectData[projectId];
+  if (!project) {
+    console.error('Project not found:', projectId);
+    return;
+  }
 
-
-
-      // Function to open project modal
-      // Function to open project modal
-      function openProjectModal(projectId) {
-        const project = projectData[projectId];
-        if (!project) {
-          console.error('Project not found:', projectId);
-          return;
-        }
-
-        const modal = new bootstrap.Modal(document.getElementById('projectModal'));
-        
-        // Build modal content with title inside
-        const content = `
-          <div class="mb-4">
-            <h3 style="color: #dbeafe; font-weight: 600; font-size: 1.75rem; margin-bottom: 20px;">${project.title}</h3>
-          </div>
-          
-          <div class="row">
-            <div class="col-md-6">
-              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-4" style="width: 100%; height: 250px; object-fit: fill;">
+  const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+  
+  // Build modal content with title inside
+  const content = `
+    <div class="mb-4">
+      <h3 style="color: #dbeafe; font-weight: 600; font-size: 1.75rem; margin-bottom: 20px;">${project.title}</h3>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-4" style="width: 100%; height: 250px; object-fit: fill;">
+      </div>
+      <div class="col-md-6">
+        <h6 style="color: #93c5fd; margin-bottom: 15px;">Technologies Used</h6>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          ${project.technologies.map(tech => `
+            <div class="d-flex flex-column align-items-center text-center" style="min-width: 80px;">
+              <img src="${tech.logo}" alt="${tech.name}" style="width: 40px; height: 40px; object-fit: contain; margin-bottom: 5px;">
+              <span style="color: #dbeafe; font-size: 0.8rem;">${tech.name}</span>
             </div>
-            <div class="col-md-6">
-              <h6 style="color: #93c5fd; margin-bottom: 15px;">Technologies Used</h6>
-              <div class="d-flex flex-wrap gap-2 mb-4">
-                ${project.technologies.map(tech => `<span class="badge bg-primary">${tech}</span>`).join('')}
-              </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-4">
+      <h6 style="color: #93c5fd;">Project Overview</h6>
+      <p style="color: #dbeafe; line-height: 1.6;">${project.description}</p>
+    </div>
+
+    <div class="mb-4">
+      <h6 style="color: #93c5fd;">Key Features</h6>
+      <ul style="color: #dbeafe;">
+        ${project.features.map(feature => `<li style="margin-bottom: 8px;">${feature}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h6 style="color: #93c5fd;">Technical Challenges</h6>
+      <ul style="color: #dbeafe;">
+        ${project.challenges.map(challenge => `<li style="margin-bottom: 8px;">${challenge}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h6 style="color: #93c5fd;">Results & Impact</h6>
+      <ul style="color: #dbeafe;">
+        ${project.results.map(result => `<li style="margin-bottom: 8px;">${result}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h6 style="color: #93c5fd;">Contributors</h6>
+      <div class="row ${project.contributors.length > 1 && project.contributors.length <= 4 ? 'justify-content-center' : ''}">
+        ${project.contributors.map(contributor => `
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="text-center">
+              <img src="${contributor.image}" alt="${contributor.name}" 
+                   class="rounded-circle mb-2" 
+                   style="width: 60px; height: 60px; object-fit: cover;">
+              <h6 style="color: #dbeafe; font-size: 0.9rem; margin-bottom: 2px;">${contributor.name}</h6>
+              <p style="color: #93c5fd; font-size: 0.8rem; margin-bottom: 0;">${contributor.role}</p>
             </div>
           </div>
-          
-          <div class="mb-4">
-            <h6 style="color: #93c5fd;">Project Overview</h6>
-            <p style="color: #dbeafe; line-height: 1.6;">${project.description}</p>
-          </div>
+        `).join('')}
+      </div>
+    </div>
 
-          <div class="mb-4">
-            <h6 style="color: #93c5fd;">Key Features</h6>
-            <ul style="color: #dbeafe;">
-              ${project.features.map(feature => `<li style="margin-bottom: 8px;">${feature}</li>`).join('')}
-            </ul>
-          </div>
-
-          <div class="mb-4">
-            <h6 style="color: #93c5fd;">Technical Challenges</h6>
-            <ul style="color: #dbeafe;">
-              ${project.challenges.map(challenge => `<li style="margin-bottom: 8px;">${challenge}</li>`).join('')}
-            </ul>
-          </div>
-
-          <div class="mb-4">
-            <h6 style="color: #93c5fd;">Results & Impact</h6>
-            <ul style="color: #dbeafe;">
-              ${project.results.map(result => `<li style="margin-bottom: 8px;">${result}</li>`).join('')}
-            </ul>
-          </div>
-
-          <div class="mt-4">
-            ${project.github ? `<a href="${project.github}" target="_blank" class="btn btn-outline-light btn-sm">
-              <i class="fab fa-github me-2"></i>View Code
-            </a>` : ''}
-          </div>
-        `;
-        
-        document.getElementById('projectContent').innerHTML = content;
-        
-        modal.show();
-      }
+    <div class="mt-4">
+      ${project.github ? `<a href="${project.github}" target="_blank" class="btn btn-outline-light btn-sm">
+        <i class="fab fa-github me-2"></i>View Code
+      </a>` : ''}
+    </div>
+  `;
+  
+  document.getElementById('projectContent').innerHTML = content;
+  
+  modal.show();
+}
