@@ -5,7 +5,82 @@
         once: true,
       });
 
+const easingFunctions = {
+  easeOutQuart: t => 1 - Math.pow(1 - t, 4),
+  easeOutCubic: t => 1 - Math.pow(1 - t, 3),
+  easeOutExpo: t => t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
+  easeOutCirc: t => Math.sqrt(1 - Math.pow(t - 1, 2))
+};
 
+function animateCounterEnhanced(element, target, duration = 2000, decimals = 0, suffix = '', easingType = 'easeOutQuart') {
+  const start = 0;
+  const startTime = performance.now();
+  const easing = easingFunctions[easingType] || easingFunctions.easeOutQuart;
+  
+  function updateCounter(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easedProgress = easing(progress);
+    
+    const current = start + (target - start) * easedProgress;
+    
+    if (decimals > 0) {
+      element.textContent = current.toFixed(decimals) + suffix;
+    } else {
+      element.textContent = Math.floor(current) + suffix;
+    }
+    
+    if (progress < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      if (decimals > 0) {
+        element.textContent = target.toFixed(decimals) + suffix;
+      } else {
+        element.textContent = target + suffix;
+      }
+    }
+  }
+  
+  requestAnimationFrame(updateCounter);
+}
+
+// Initialize counter animations when elements come into view
+function initCounterAnimations() {
+  const statsNumbers = document.querySelectorAll('.stats-number[data-target]');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const target = parseFloat(element.dataset.target);
+        const decimals = parseInt(element.dataset.decimals) || 0;
+        const suffix = element.dataset.suffix || '';
+        
+        // Start animation with a slight delay for better effect
+        setTimeout(() => {
+          animateCounterEnhanced(element, target, 2000, decimals, suffix);
+        }, 200);
+        
+        // Stop observing this element
+        observer.unobserve(element);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+  
+  statsNumbers.forEach(element => {
+    observer.observe(element);
+  });
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // ...existing code...
+  
+  // Initialize counter animations
+  initCounterAnimations();
+});
       
       // Typing animation for the banner
       const phrases = [
