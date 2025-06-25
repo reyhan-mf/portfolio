@@ -9,6 +9,8 @@
   --card-border: rgba(59, 130, 246, 0.3);
 }
 
+
+
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, var(--darker), var(--dark));
@@ -446,6 +448,18 @@ body {
 
 .project-content {
   padding: 1.75rem;
+  
+}
+
+.read-more-link {
+  color: #60a5fa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Optional: Add hover effect */
+.read-more-link:hover {
+  text-decoration: underline;
 }
 
 .contact-map {
